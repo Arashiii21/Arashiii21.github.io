@@ -1,4 +1,5 @@
 // all objects storing all expenses properties are stored here
+document.write(localStorage['content']);
 var profit = [];
 
 var o = "";
@@ -206,5 +207,7 @@ function showExpense()
     expenseSumCell.innerHTML         = "₱" + sumExpenses;
 }
 
+var HTML = "index.html"; //html of the page goes here
+localStorage.setItem("content", HTML)
 
 
