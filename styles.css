@@ -1,0 +1,145 @@
+html {
+    font-size: 16px;
+ }
+ a, article, body, div, figure, 
+ header, h1, h2, h3, img, p, section, form, fieldset, table {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: lavender;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 1em;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+p#shorten{
+    font-size: 1.2em;
+}
+
+
+
+form {
+    margin: 1em;
+    
+    padding: 3em;
+    font-size: 0.8em;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.144);
+    min-height: 350px;
+    background-color: rgb(83, 247, 7);
+    width: 20em;
+  }
+
+
+  
+input[type = text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+#firstbutton {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#secondbutton {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#showexpense{
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 0;
+    margin: 0.5em;  
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+#secondbutton:hover, #firstbutton:hover, #showexpense:hover{
+    background-color: #0fe3eb;
+}
+
+/* ----------------------------------------------------Styles for table-----------------------------------------------  */
+table {
+    border-collapse: collapse;
+}
+
+#table11 {
+    border: 1px solid rgb(202, 198, 198);
+    border-radius: 1em;
+    width: 40em;
+    padding: 1em;
+    max-width: auto;
+    background-color: rgb(16, 240, 248);
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.144);
+}
+
+tr {
+    border: 1px solid black;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(195, 206, 51);
+    color: white;
+    width: 9.1em;
+    border: 1px solid #ddd;
+}
+
+td {
+    background-color: #45a049;
+    text-align: center; 
+    padding: 0.2em;
+    border: 1px solid #ddd;
+}
+/* ----------------------------------------------------------------------------------------------------- */
+
+#selectperiod {
+    margin: 0.5em;
+    border: 1px solid rgb(202, 198, 198);
+    padding: 1em;
+    width: 85%;
+    background-color: ivory;
+    border-radius: 1em;
+  
+    
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.144);
+}

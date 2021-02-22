@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Shi XXI Mannager</title>
+</head>
+
+<body>
+    <article>
+		
+        <h1>Shi XXI Manager</h1>    
+        <h1 id = "test"></h1>
+
+
+        <form id = "profit">
+    
+            <fieldset>
+    
+                <label for="product">
+                    Product
+                    <select id = "product">
+                            <optgroup label="Watch">
+                              <option value="Netflix">Netflix</option>
+                              <option value="Viu">Viu</option>
+                              <option value="Crunchyroll">Cruncyroll</option>
+                              <option value="Disney+">Disney+</option>
+                              <option value="Amazon Prime">Amazon Prime</option>
+                              <option value="Iflix VIP">Iflix VIP</option>
+                              <option value="Youtube">Youtube</option>
+                              <option value="HBO Max">HBO Max</option>
+                              <option value="HBO Go">HBO Go</option>
+                              <option value="Marvel Unlimited">Marvel Unlimited</option>
+                              <option value="Shudder">Shudder</option>
+                              <option value="Hulu">Hulu</option>
+                              <option value="NBA League Pass">NBA League Pass</option>
+                              <option value="Hayu">Hayu</option>
+                              <option value="Iwant TFC">Iwant TFC</option>
+                              <option value="VRV Anime ">VRV Anime </option>
+                            </optgroup>
+                            <optgroup label="Listen">
+                                <option value="Spotify">Spotify</option>
+                                <option value="Apple Music">Apple Music</option>
+                                <option value="Calm Premium">Calm Premium</option>
+                                <option value="Youtube">Youtube</option>
+                                <option value="Deezer">Deezer</option>
+                                <option value="Tidal Hifi">Tidal Hifi</option>
+                                <option value="Pandora">Pandora</option>
+                                <option value="Napster">Napster</option>
+                                <option value="Audible">Audible</option>
+                            </optgroup>
+                            <optgroup label="VPN/Domain">
+                                <option value="Keep Solid">Keep Solid</option>
+                                <option value="Namecheap">Namecheap</option>
+                                <option value="Windscribe">Windscribe</option>
+                                <option value="Vypr Vpn">Vypr Vpn</option>
+                                <option value="Seed4me Vpn">Audible</option>
+                                <option value="Ambit Vpn">Ambit Vpn</option>
+                                <option value="City Premium Vpn">City Premium Vpn</option>
+                                <option value="NordVpn ">NordVpn </option>
+                                <option value="Private Domain">Private Domain</option>
+                            </optgroup>
+                            <optgroup label="Student/Teacher ">
+                                <option value="Chegg">Chegg</option>
+                                <option value="Quizletn">Quizlet</option>
+                                <option value="Grammarly">Grammarly</option>
+                                <option value="Quillbot">Quillbot</option>
+                                <option value="Studocu">Studocu</option>
+                                <option value="Mathway">Mathway</option>
+                                <option value="Shaw Academy">Shaw Academy</option>
+                                <option value="Bartleby">Bartleby</option>
+                                <option value="Skillshare">Skillshare</option>
+                                <option value="Scribd">Scribd</option>
+                                <option value="Coursehero">Coursehero</option>
+                                <option value="Duolingo">Duolingo</option>
+                                <option value="MS Office 365">MS Office 365</option>
+                                <option value="Zoom Pro">Zoom Pro</option>
+                                <option value="Unli Gdrive">Unli Gdrive</option>
+                                <option value="Dropbox">Dropbox</option>
+                                <option value="Prezi">Prezi</option>
+                                <option value="Lumosity">Lumosity</option>
+                            </optgroup>
+                            <optgroup label="Editing/Social Media">
+                                <option value="Canva Pro">Canva Pro</option>
+                                <option value="Picsart Gold">Picsart Goldo</option>
+                                <option value="Nichi Pro">Nichi Pro</option>
+                                <option value="Hootsuite">Hootsuite</option>
+                            </optgroup>
+                            <optgroup label="Reading">
+                                <option value="Wattpad">Wattpad</option>
+                                <option value="Wattpad Coins">Wattpad Coins</option>
+                                <option value="Scribd">Scribd</option>
+                                <option value="Perlego Unlimited Books">Perlego Unlimited Books</option>
+                                <option value="Audible">Audible</option>
+                            </optgroup>
+                            <optgroup label="Gaming">
+                                <option value="Utomik">Utomik</option>
+                                <option value="ML Dias">ML Dias</option>
+                                <option value="ML Skin">ML Skin</option>
+                                <option value="Starlight">Starlight</option>
+                                <option value="Twilight Pass">Twilight Pass</option>
+                                <option value="Valorant Points">Valorant Points</option>
+                                <option value="Lol Wild Rift Core">Lol Wild Rift Core</option>
+                                <option value="PUBG Mobile UC">PUBG Mobile UC</option>
+                                <option value="Genshin Impact Genesis Crystals">Genshin Impact Genesis Crystals</option>
+                                <option value="Call of Duty Shells">Call of Duty Shells</option>
+                                <option value="Garena Shells">Garena Shells</option>
+                            </optgroup>
+                            <optgroup label="18+ Section">
+                                <option value="Pornhub">Pornhub</option>
+                                <option value="Brazzers">Brazzers</option>
+                            </optgroup>
+                            <optgroup label="Android Paid Apps">
+                                <option value="One App">One App</option>
+                                <option value="Take All">Take All</option>
+                            </optgroup>
+                            <optgroup label="IOS Paid Apps">
+                                <option value="PICSART GOLD">PICSART GOLD</option>
+                                <option value="NICHI PRO">NICHI PRO</option>
+                                <option value="TEMPLATE ">TEMPLATE </option>
+                                <option value="STORY ART ">STORY ART </option>
+                                <option value="UNFOLD">UNFOLD</option>
+                                <option value="OVER APP">OVER APP</option>
+                                <option value="PREQUEL GOLD ">PREQUEL GOLD </option>
+                                <option value="KINEMASTER ">KINEMASTER </option>
+                                <option value="INSHOT PRO ">INSHOT PRO </option>
+                                <option value="ANATOMY ATLAS 2012">ANATOMY ATLAS 2012</option>
+                                <option value="VLLO PREMIUM">VLLO PREMIUM</option>
+                                <option value="KIRA KIRA">KIRA KIRA</option>
+                                <option value="CUTE CUT PRO">CUTE CUT PRO</option>
+                                <option value="FACETUNE">FACETUNE</option>
+                                <option value="GTA TRILOGY ">GTA TRILOGY </option>
+                                <option value="MINECRAFT">MINECRAFT</option>
+                                <option value="NBA 2K20">NBA 2K20</option>
+                                <option value="MONOPOLY ">MONOPOLY </option>
+                                <option value="GOODNOTES 5">GOODNOTES 5</option>
+                                <option value="PROCREATE POCKET">PROCREATE POCKET</option>
+                                <option value="NOTABILITY">NOTABILITY</option>
+                                <option value="PROCREATE FOR IPAD">PROCREATE FOR IPAD</option>
+                                <option value="FOREST">FOREST</option>
+                            </optgroup>
+                            <optgroup label="Lightroom Presets ">
+                                <option value="2.5k+ Presets">2.5k+ Presets</option>
+                            </optgroup>
+                            <optgroup label="PC Software">
+                                <option value="One Software">One Software</option>
+                                <option value="Take All">Take All</option>
+                            </optgroup>
+                    </select>
+                </label>
+                <label for="amount">
+                    Amount Paid (PHP)
+                    <input type="text" id="amount" name="amount" placeholder="₱0.00">
+                </label>
+                <br><br>
+                <label for="seller">
+                    Pick a seller
+                    <select id = "pick a seller">
+                        <option value="Cyavis">Cyavis 09108103913 </option>
+                        <option value="Rish">Rish 09062801720 </option>
+                        <option value="Bai">Bai 09173268556</option>
+                    </select>
+                </label>
+                <br><br>
+                <label for="Seller Price">
+                    Seller Price
+                    <input type="text" id="sellerprice" name="sellerprice" placeholder="₱0.00">
+                </label>
+                <label for="date">
+                    Date<br>(DD-MM-YYYY)
+                    <input type="date" id="date" name="date" placeholder="date">
+                </label>
+            </fieldset>
+    
+    
+            <fieldset>
+    
+                <input id = "firstbutton" type = "button" value = "Add Purchase"  onclick = "pushInput_To_Expenses();">
+                
+    
+            </fieldset>
+        </form>		
+
+            <section id = "table11">	
+                <table id = "table1">
+
+                    <tr>
+                        <th>Product</th>
+                        <th>Amount Paid</th>
+                        <th>Seller</th>
+                        <th>Seller Price</th>
+                        <th>Profit</th>
+                        <th>Date<br>(YYYY-MM-DD)</th>
+                    </tr>
+                                        
+                </table>
+               
+                <input id = "secondbutton" type = "button" value = "Calculate Profit"  onclick = "calculateExpense()">
+                <p  >Total Profit:</p>
+                <p id = "totalprofits"></p>
+            </section>
+        
+        <section id = "selectperiod">
+
+            <br><br><p>View Your Profits By Date!</p>
+            <p id = "shorten">Select the period to display</p><br><br>
+            <div class="startdate">
+                <p>Start Date:</p>
+                <label for="startdate">
+                    Date:
+                    <input type="date" id="startdate" name="startdate" placeholder="startdate">
+                </label>
+            </div>
+    
+    
+            <div class = "enddate">
+                <p>End Date:</p>
+                <label for="enddate">
+                     Date:
+                    <input type="date" id="enddate" name="enddate" placeholder="enddate">
+                </label>
+            </div>
+    
+            <br><br><input id = "showexpense" type = "button" value = "Show Expenses"  onclick = "showExpense()"><br></br>
+    
+            <section class = "table2">			
+                    <table id = "table2">														
+                    </table>
+                </section>
+    
+        </section>
+    
+    </article>
+    <script src="script.js"></script>
+</body>
+
+</html>
