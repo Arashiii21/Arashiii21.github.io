@@ -1,9 +1,4 @@
 // all objects storing all expenses properties are stored here
-var table11 = document.getElementById("table11");
-var selectPeriod = document.getElementById("selectperiod");
-table11.value = localStorage.setItem("table11");
-selectPeriod.value = localStorage.setItem("selectperiod");
-
 var profit = [];
 
 var o = "";
@@ -210,22 +205,6 @@ function showExpense()
     expenseSumCellLabel.innerHTML    = "Total Profits:";
     expenseSumCell.innerHTML         = "₱" + sumExpenses;
 }
-var table11 = document.getElementById("table11");
-var selectPeriod = document.getElementById("selectperiod");
 
-try {
-    localStorage.setItem("table11", table11.value);
-    localStorage.setItem("selectperiod", selectPeriod.value);
-    table11.value = "";
-    selectPeriod.value = "";
-} 
-catch (e) {
-    if (e == QUOTA_EXCEEDED_ERR) {
-        console.log("Error: Local Storage limit exceeds.");
-    }
-    else {
-        console.log("Error: Saving to local storage.");
-    }
-} 
 
 
